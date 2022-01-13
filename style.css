@@ -1,0 +1,155 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(185, 75%, 39%);
+    /* background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/bg-pattern-bottom.svg); */
+    position: relative;
+    overflow: hidden;
+    /* font-size:  18px; */
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container {
+    height:350px;
+    width:300px;
+    background-color: rebeccapurple;
+    margin: 10% auto;
+    /* padding: 20px; */
+    z-index: 1000;
+    background-color: white;
+border-radius: 10px;
+
+
+}
+p {
+    opacity: 0.4;
+}
+.bottom {
+    position: absolute;
+    bottom: -279px;
+    width: 50%;
+    right: 1px;
+    z-index: -1;
+}
+.top {
+    position: absolute;
+    width: 50%;
+    top: -133px;
+    left: -26px;
+    z-index: -1;
+
+}
+
+.image {
+    height: 35%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px 10px  0 0;
+
+}
+.image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px  0 0;
+}
+.image:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(images/image-victor.jpg);
+    top: 41%;
+    left: 33%;
+    border: 5px solid white;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+ 
+    background-color: white;
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}
+h1 {
+    display: block;
+}
+hr {
+    color: black;
+    width: 100%;
+    opacity: 0.4;
+}
+.title{
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:375px){
+    .container {
+        height: 350px;
+    width: 300px;
+    background-color: rebeccapurple;
+    margin: 35% auto;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px #eee;
+    z-index: 1000;
+    background-color: white;
+}
+.top {
+    position: absolute;
+    width: 75%;
+    top: -156px;
+    left: -26px;
+    z-index: -1;
+}
+.bottom {
+    position: absolute;
+    bottom: -270px;
+    width: 75%;
+    right: 0;
+    z-index: -1;
+
+}
+    
+}
+@media (min-width:375px) and (max-width:775px){
+    .container {
+        height: 350px;
+    width: 300px;
+    background-color: rebeccapurple;
+    margin: 35% auto;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px #eee;
+    z-index: 1000;
+    background-color: white;
+}
+.top {
+    position: absolute;
+    width: 75%;
+    top: -156px;
+    left: -26px;
+    z-index: -1;
+}
+.bottom {
+    position: absolute;
+    bottom: -270px;
+    width: 75%;
+    right: 0;
+    z-index: -1;
+
+}
+    
+}
